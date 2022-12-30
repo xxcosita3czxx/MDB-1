@@ -15,19 +15,16 @@ To run this project, you will need to add the following environment variables to
 
 `STATE`
 
-
 ## License
 
 [APACHE-2.0](https://choosealicense.com/licenses/apache-2.0)
-
 
 ## Authors
 
 - [@xxcosita3czxx](https://www.github.com/xxcosita3czxx)
 
-
 ## Support
 
-For support, email kokosove18@gmail.com or 
+For support, email kokosove18@gmail.com or
 
 join our [Discord](https://discord.gg/SRccdac982)
