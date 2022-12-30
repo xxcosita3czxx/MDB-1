@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-
+sg.theme('dark')
 layout = [
     [sg.Text("MDB 1 gui tool"), sg.Spin(["1","2"])],
     [sg.Button("restart code")],
