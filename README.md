@@ -18,7 +18,7 @@ To run this project, you will need to add the following environment variables to
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/apache-2.0)
+[APACHE-2.0](https://choosealicense.com/licenses/apache-2.0)
 
 
 ## Authors
