@@ -4,9 +4,11 @@ from discord import app_commands
 ## Config
 
 token = "token"
+prefix = 'prefix'
+state = 'dnd'
 
 intents = discord.Intents.default()
-bot = discord.Client(intents=intents)
+bot = discord.Client(intents=intents,prefix=prefix)
 tree = app_commands.CommandTree(bot)
 
 @bot.event()
