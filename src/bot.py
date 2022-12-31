@@ -9,7 +9,7 @@ token = os.getenv(token)
 status = os.getenv(status)
 
 intents = discord.Intents.default()
-bot = discord.Client(intents=intents,prefix=prefix)
+bot = discord.Client(intents=intents)
 tree = app_commands.CommandTree(bot)
 
 ## Main code
