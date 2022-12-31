@@ -1,9 +1,11 @@
 import discord
 from discord import app_commands
 import os 
+from dotenv import load_dotenv
 
 ## Config
 
+load_dotenv()
 token = os.getenv('token')
 prefix = os.getenv('prefix')
 status = os.getenv('status')
