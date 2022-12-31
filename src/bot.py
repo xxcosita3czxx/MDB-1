@@ -4,12 +4,16 @@ import os
 from dotenv import load_dotenv
 
 ## Config
+
 load_dotenv()
-token = os.getenv(token)
-status = os.getenv(status)
+token = os.getenv('token')
+prefix = os.getenv('prefix')
+status = os.getenv('status')
+
+## vars
 
 intents = discord.Intents.default()
-bot = discord.Client(intents=intents)
+bot = discord.Client(intents=intents,prefix=prefix)
 tree = app_commands.CommandTree(bot)
 
 ## Main code
