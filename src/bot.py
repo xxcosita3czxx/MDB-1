@@ -5,9 +5,8 @@ from dotenv import load_dotenv
 
 ## Config
 load_dotenv()
-token = "token"
-prefix = 'prefix'
-status = 'dnd'
+token = os.getenv(token)
+status = os.getenv(status)
 
 intents = discord.Intents.default()
 bot = discord.Client(intents=intents,prefix=prefix)
