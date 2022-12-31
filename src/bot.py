@@ -4,19 +4,10 @@ import os
 from dotenv import load_dotenv
 
 ## Config
-
-<<<<<<< HEAD
+load_dotenv()
 token = "token"
 prefix = 'prefix'
 status = 'dnd'
-=======
-load_dotenv()
-token = os.getenv('token')
-prefix = os.getenv('prefix')
-status = os.getenv('status')
-
-## vars
->>>>>>> e06bd1571181fb276c237fdcef30b29ffaeb72cd
 
 intents = discord.Intents.default()
 bot = discord.Client(intents=intents,prefix=prefix)
