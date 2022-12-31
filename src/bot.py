@@ -1,11 +1,12 @@
 import discord
 from discord import app_commands
+import os 
 
 ## Config
 
-token = "token"
-prefix = 'prefix'
-state = 'dnd'
+token = os.getenv('token')
+prefix = os.getenv('prefix')
+state = os.getenv('state')
 
 intents = discord.Intents.default()
 bot = discord.Client(intents=intents,prefix=prefix)
