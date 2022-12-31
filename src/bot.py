@@ -6,7 +6,7 @@ import os
 
 token = os.getenv('token')
 prefix = os.getenv('prefix')
-state = os.getenv('state')
+status = os.getenv('status')
 
 intents = discord.Intents.default()
 bot = discord.Client(intents=intents,prefix=prefix)
