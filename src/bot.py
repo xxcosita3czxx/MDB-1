@@ -5,7 +5,7 @@ from discord import app_commands
 
 token = "token"
 prefix = 'prefix'
-state = 'dnd'
+status = 'dnd'
 
 intents = discord.Intents.default()
 bot = discord.Client(intents=intents,prefix=prefix)
