@@ -23,6 +23,8 @@ To run this project, you will need to add the following environment variables to
 
 - [@xxcosita3czxx](https://www.github.com/xxcosita3czxx)
 
+- ▄︻デD̷a̷n̷y̷a̷h̷══━一#9330 - Logo
+
 ## Support
 
 For support, email kokosove18@gmail.com or
