@@ -1,9 +1,14 @@
+
+![Logo](https://cdn.discordapp.com/attachments/1050472512833732660/1059161557789069362/magicbot.png)
+
+
 # MDB 1
 
 Magic Discord Bot Source
 
 ![Discord](https://img.shields.io/discord/1056359221446311986?label=Discord&logo=discord&style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/xxcosita3czxx/MDB-1?logo=github&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/xxcosita3czxx/MDB-1?logo=github&style=for-the-badge)
 
 ## Environment Variables
 
@@ -21,7 +26,9 @@ To run this project, you will need to add the following environment variables to
 
 ## Authors
 
-- [@xxcosita3czxx](https://www.github.com/xxcosita3czxx)
+- [@xxcosita3czxx](https://www.github.com/xxcosita3czxx) - Programin
+
+- ▄︻デD̷a̷n̷y̷a̷h̷══━一#9330 - Logo
 
 ## Support
 
