@@ -12,8 +12,6 @@ status = os.getenv('status')
 
 ## vars
 
-intents = discord.Intents.default()
-bot = discord.Client(intents=intents,prefix=prefix)
 class aclient(discord.Client):
     def __init__(self):
         super().__init__(intents=discord.Intents.all())
@@ -41,6 +39,13 @@ async def on_ready():
 @tree.command(name="ping", description="Lets play ping pong")
 async def ping(interaction):
     await interaction.response.send_message("Pong!")
+
+#test
+
+@tree.command(name = "test",description="Super ultra giga test")
+async def test(interaction: discord.Interaction):
+    await interaction.response.send_message("Hello!")
+
 
 ## Run 
 
