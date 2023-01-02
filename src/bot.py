@@ -32,7 +32,7 @@ tree = app_commands.CommandTree(bot)
 # Commands
 
 @tree.command(name="ping", description="Lets play ping pong")
-async def ping(interaction):
+async def ping(interaction: discord.Interaction):
     await interaction.response.send_message("Pong!")
     logging.debug("Used Command Ping!")
 
