@@ -2,7 +2,7 @@ import PySimpleGUI as sg
 import click
 sg.theme('dark')
 layout = [
-    [sg.Text("MDB 1 gui tool"), sg.Spin(["1","2"])],
+    [sg.Text("MDB 1 gui tool"), sg.Spin(["1","2"],key="spin")],
     [sg.Button("restart code")]
 ]
 
@@ -13,5 +13,5 @@ while True:
     if event == sg.WIN_CLOSED:
         break
     if event == "restart code":
-        print("Restart Code")
+        print(values)
 window.close()
