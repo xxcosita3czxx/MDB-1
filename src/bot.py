@@ -8,8 +8,18 @@ load_dotenv()
 token = os.getenv(token)
 status = os.getenv(status)
 
-intents = discord.Intents.default()
-bot = discord.Client(intents=intents)
+class aclient(discord.Client):
+    def __init__(self):
+        super().__init__(intents=discord.Intents.all())
+        self.synced = False
+
+    async def on_ready(self):
+        await self.wait_until_ready()
+        if not self.synced:
+            await tree.sync(guild=discord.Object(id="YOUR GUILD ID"))
+            self.synced = True
+
+bot = aclient()
 tree = app_commands.CommandTree(bot)
 
 ## Main code
