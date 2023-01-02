@@ -3,7 +3,8 @@ import click
 sg.theme('dark')
 layout = [
     [sg.Text("MDB 1 gui tool")],
-    [sg.Button("restart code")]
+    [sg.Button("restart code")],
+    []
 ]
 
 window=sg.Window("MDB 1", layout)
