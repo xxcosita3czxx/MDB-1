@@ -6,7 +6,7 @@ import coloredlogs
 from dotenv import load_dotenv
 ##config
 coloredlogs.install()
-logging.basicConfig(filename='example.log', encoding='utf-8',format='%(asctime)s : %(levelname)s >> %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p',level=logging.DEBUG)
+logging.basicConfig(filename='bot.log', encoding='utf-8',format='%(asctime)s : %(levelname)s >> %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p',level=logging.DEBUG)
 load_dotenv()
 token = os.getenv('token')
 status = os.getenv('status')
