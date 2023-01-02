@@ -1,10 +1,11 @@
 import discord
 from discord import app_commands
 import os 
-from config import token
-from config import status
+import config
 
 ## vars
+token = config("token")
+status = config("status")
 
 class aclient(discord.Client):
     def __init__(self):
