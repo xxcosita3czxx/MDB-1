@@ -4,6 +4,7 @@ Magic Discord Bot Source
 
 ![Discord](https://img.shields.io/discord/1056359221446311986?label=Discord&logo=discord&style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/xxcosita3czxx/MDB-1?logo=github&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/xxcosita3czxx/MDB-1?logo=github&style=for-the-badge)
 
 ## Environment Variables
 
