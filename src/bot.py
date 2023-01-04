@@ -4,6 +4,7 @@ import os
 import logging
 import coloredlogs
 from dotenv import load_dotenv
+
 ##config
 coloredlogs.install()
 logging.basicConfig(filename='bot.log', encoding='utf-8',format='%(asctime)s : %(levelname)s >> %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p',level=logging.DEBUG)
@@ -26,21 +27,19 @@ class aclient(discord.Client):
 bot = aclient()
 tree = app_commands.CommandTree(bot)
 
-## Main code
+## Commands
 
-# Commands
+# Ulity
 
 @tree.command(name="ping", description="Lets play ping pong")
 async def ping(interaction: discord.Interaction):
     await interaction.response.send_message("Pong!")
-    logging.DEBUG("Used Command Ping!")
 
-#test
+# Test
 
 @tree.command(name = "test",description="Super ultra giga test")
 async def test(interaction: discord.Interaction):
     await interaction.response.send_message("Hello!")
-    logging.DEBUG("Used Command Test!")
 
 ## Run 
 
