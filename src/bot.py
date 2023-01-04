@@ -33,14 +33,14 @@ tree = app_commands.CommandTree(bot)
 @tree.command(name="ping", description="Lets play ping pong")
 async def ping(interaction: discord.Interaction):
     await interaction.response.send_message("Pong!")
-    logging.info("Used Command Ping!")
+    logging.DEBUG("Used Command Ping!")
 
 #test
 
 @tree.command(name = "test",description="Super ultra giga test")
 async def test(interaction: discord.Interaction):
     await interaction.response.send_message("Hello!")
-    logging.info("Used Command Test!")
+    logging.DEBUG("Used Command Test!")
 
 ## Run 
 
