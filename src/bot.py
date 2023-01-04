@@ -11,6 +11,13 @@ logging.basicConfig(filename='bot.log', encoding='utf-8',format='%(asctime)s : %
 load_dotenv()
 token = os.getenv('token')
 status = os.getenv('status')
+help_list="""**HELP**
+<< UL1T9 >> 
+help = /help
+ping = /ping
+<< T3ST1NG >>
+test = /test
+"""
 
 class aclient(discord.Client):
     def __init__(self):
@@ -24,6 +31,7 @@ class aclient(discord.Client):
             self.synced = True
         logging.info("Ready, logged in to Bot account")
 
+
 bot = aclient()
 tree = app_commands.CommandTree(bot)
 
@@ -35,11 +43,15 @@ tree = app_commands.CommandTree(bot)
 async def ping(interaction: discord.Interaction):
     await interaction.response.send_message("Pong!")
 
+@tree.command(name="help", description="All the commands at one place")
+async def help(interaction: discord.Interaction):
+    await interaction.response.send_message(help_list)
+
 # Test
 
 @tree.command(name = "test",description="Super ultra giga test")
-async def test(interaction: discord.Interaction):
-    await interaction.response.send_message("Hello!")
+async def test(interaction: discord.Interaction, test_text):
+    await interaction.response.send_message(f"Hello! option = {test_text}")
 
 ## Run 
 
