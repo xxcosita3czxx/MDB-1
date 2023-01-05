@@ -1,5 +1,5 @@
 
-![Logo](https://cdn.discordapp.com/attachments/1050472512833732660/1059161557789069362/magicbot.png)
+![Logo](./.github/magicbot.png)
 
 
 # MDB 1
