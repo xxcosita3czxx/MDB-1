@@ -49,9 +49,9 @@ async def help(interaction: discord.Interaction):
 
 # Test
 
-@tree.command(name = "test",description="Super ultra giga test")
-async def test(interaction: discord.Interaction, test_text):
-    await interaction.response.send_message(f"Hello! option = {test_text}")
+#@tree.command(name = "test",description="Super ultra giga test")
+#async def test(interaction: discord.Interaction, test_text):
+#    await interaction.response.send_message(f"Hello! option = {test_text}")
 
 ## Run 
 
