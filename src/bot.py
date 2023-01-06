@@ -58,11 +58,11 @@ async def on_message(message):
 
   # From here, you can add all the rules and the behaviour of the bot.
   # In this case, the bot checks if the content of the message is "Hello!" and send a message if it's true.
-  if message.content == 'Hello!':
+  if message.content == hello_list:
     await message.channel.send("Hello! I'm happy to see you around here.")
     return
 
-  if message.content == 'Good bye!':
+  if message.content == bhai_list:
     await message.channel.send("Hope to see you soon!")
     return
 logging.info("Loading commands")
