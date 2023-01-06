@@ -17,7 +17,7 @@ logging.basicConfig(filename='bot.log', encoding='utf-8',format='%(asctime)s : %
 load_dotenv()
 token = os.getenv('token')
 status = os.getenv('status')
-activity = os.getenv('activity')
+#activity = os.getenv('activity')
 logging.info("Config loaded successfully")
 # Text
 
@@ -41,10 +41,10 @@ class aclient(discord.Client):
 
     async def on_ready(self):
         await self.wait_until_ready()
-        await bot.change_presence(status=status, activity=activity)
         if not self.synced:
             await tree.sync()
             self.synced = True
+        await bot.change_presence(status=status)
         logging.info("Ready, logged in to Bot account")
 
 
