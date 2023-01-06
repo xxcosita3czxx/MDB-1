@@ -4,6 +4,12 @@ import os
 import logging
 import coloredlogs
 from dotenv import load_dotenv
+import platform
+## Pre start
+if platform.system() == "Windows":
+    os.system("cls")
+elif platform.system() == "Linux":
+    os.system("clear")
 
 ## Config
 coloredlogs.install()
