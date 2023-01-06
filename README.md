@@ -1,6 +1,6 @@
 
 ![Logo](./.github/magicbot.png)
-
+img[alt=Logo] { width: 200px; }
 
 # MDB 1
 
