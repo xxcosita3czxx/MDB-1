@@ -36,11 +36,12 @@ logging.info("Text for commands loaded successfully")
 ## Client 
 class aclient(discord.Client):
     def __init__(self):
-        super().__init__(intents=discord.Intents.all(),activity=activity,status=status)
+        super().__init__(intents=discord.Intents.all())
         self.synced = False
 
     async def on_ready(self):
         await self.wait_until_ready()
+        await client.change_presence(status=status, activity=activity)
         if not self.synced:
             await tree.sync()
             self.synced = True
