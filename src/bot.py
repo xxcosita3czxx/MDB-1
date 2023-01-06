@@ -41,7 +41,7 @@ tree = app_commands.CommandTree(bot)
 
 @tree.command(name="ping", description="Lets play ping pong")
 async def ping(interaction: discord.Interaction):
-    await interaction.response.send_message("Pong!")
+    await interaction.response.send_message('Pong! {0}'.format(round(bot.latency, 1)))
 
 @tree.command(name="help", description="All the commands at one place")
 async def help(interaction: discord.Interaction):
