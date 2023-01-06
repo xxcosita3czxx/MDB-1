@@ -17,6 +17,7 @@ logging.basicConfig(filename='bot.log', encoding='utf-8',format='%(asctime)s : %
 load_dotenv()
 token = os.getenv('token')
 status = os.getenv('status')
+activity = os.getenv('activity')
 logging.info("Config loaded successfully")
 # Text
 
@@ -35,7 +36,7 @@ logging.info("Text for commands loaded successfully")
 ## Client 
 class aclient(discord.Client):
     def __init__(self):
-        super().__init__(intents=discord.Intents.all())
+        super().__init__(intents=discord.Intents.all(),activity=activity,status=status)
         self.synced = False
 
     async def on_ready(self):
