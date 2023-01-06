@@ -5,19 +5,19 @@ import logging
 import coloredlogs
 from dotenv import load_dotenv
 import platform
+coloredlogs.install()
 ## Pre start
 if platform.system() == "Windows":
     os.system("cls")
 elif platform.system() == "Linux":
     os.system("clear")
-
+logger.info("Clearing")
 ## Config
-coloredlogs.install()
 logging.basicConfig(filename='bot.log', encoding='utf-8',format='%(asctime)s : %(levelname)s >> %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p',level=logging.DEBUG)
 load_dotenv()
 token = os.getenv('token')
 status = os.getenv('status')
-
+logger.info("Config loaded successfully")
 # Text
 
 help_list="""**HELP**
@@ -30,6 +30,8 @@ test = /test
 
 hello_list=["Hey","Hello","Hi"]
 bhai_list=["bhai","Goodbye","bye"]
+
+logger.info("Text for commands loaded successfully")
 ## Client 
 class aclient(discord.Client):
     def __init__(self):
@@ -47,7 +49,7 @@ class aclient(discord.Client):
 bot = aclient()
 tree = app_commands.CommandTree(bot)
 ## Events
-
+logging.info("Loading events")
 @bot.event
 async def on_message(interaction: discord.Interaction, message: discord.Message):
   # This checks if the message is not from the bot itself. If it is, it'll ignore the message.
@@ -64,7 +66,7 @@ async def on_message(interaction: discord.Interaction, message: discord.Message)
         await interaction.response.send_message("Hope to see you soon!")
         return
 
-
+logger.info("Loading commands")
 ## Commands
 
 # Ulity
@@ -84,5 +86,5 @@ async def help(interaction: discord.Interaction):
 #    await interaction.response.send_message(f"Hello! option = {test_text}")
 
 ## Run 
-
+logger.info("All things loaded!")
 bot.run(token, log_handler=None)
