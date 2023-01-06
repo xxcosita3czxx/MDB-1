@@ -28,8 +28,8 @@ ping = /ping
 test = /test
 """
 
-hello_list=["Hey","Hello","Hi"]
-bhai_list=["bhai","Goodbye","bye"]
+hello_list=["Hey","Hello","Hi","helo","hey"]
+bhai_list=["bhai","Goodbye","bye","bye bye"]
 
 logging.info("Text for commands loaded successfully")
 ## Client 
