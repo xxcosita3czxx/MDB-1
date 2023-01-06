@@ -49,7 +49,7 @@ tree = app_commands.CommandTree(bot)
 ## Events
 
 @bot.event
-async def on_message(message, interaction: discord.Interaction):
+async def on_message(interaction: discord.Interaction, message: discord.Message):
   # This checks if the message is not from the bot itself. If it is, it'll ignore the message.
     if message.author == bot.user:
         return
