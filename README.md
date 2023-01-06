@@ -10,6 +10,8 @@ Magic Discord Bot Source
 ![GitHub repo size](https://img.shields.io/github/repo-size/xxcosita3czxx/MDB-1?logo=github&style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/xxcosita3czxx/MDB-1?logo=github&style=for-the-badge)
 
+ATTENTION: Dont steal dis work, or else u get sued and i will delet ur vbuks/bobuc
+
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file indside ./src/.env
