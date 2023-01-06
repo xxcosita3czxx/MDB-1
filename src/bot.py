@@ -41,7 +41,7 @@ class aclient(discord.Client):
 
     async def on_ready(self):
         await self.wait_until_ready()
-        await client.change_presence(status=status, activity=activity)
+        await bot.change_presence(status=status, activity=activity)
         if not self.synced:
             await tree.sync()
             self.synced = True
