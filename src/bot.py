@@ -51,21 +51,20 @@ tree = app_commands.CommandTree(bot)
 ## Events
 logging.info("Loading events")
 @bot.event
-async def on_message(interaction: discord.Interaction, message: discord.Message):
+async def on_message(message):
   # This checks if the message is not from the bot itself. If it is, it'll ignore the message.
-    if message.author == bot.user:
-        return
+  if message.author == bot.user:
+    return
 
   # From here, you can add all the rules and the behaviour of the bot.
   # In this case, the bot checks if the content of the message is "Hello!" and send a message if it's true.
-    if message.content == hello_list:
-        await interaction.response.send_message("Hello! I'm happy to see you around here.")
-        return
+  if message.content == 'Hello!':
+    await message.channel.send("Hello! I'm happy to see you around here.")
+    return
 
-    if message.content == bhai_list:
-        await interaction.response.send_message("Hope to see you soon!")
-        return
-
+  if message.content == 'Good bye!':
+    await message.channel.send("Hope to see you soon!")
+    return
 logging.info("Loading commands")
 ## Commands
 
