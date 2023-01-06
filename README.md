@@ -1,6 +1,6 @@
 
 ![Logo](./.github/magicbot.png)
-img[alt=Logo] { width: 200px; }
+<img src="./.github/magicbot.png" alt="drawing" width="200"/>
 
 # MDB 1
 
