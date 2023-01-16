@@ -54,12 +54,10 @@ tree = app_commands.CommandTree(bot)
 logging.info("Loading events")
 @bot.event
 async def on_message(message):
-  # This checks if the message is not from the bot itself. If it is, it'll ignore the message.
   if message.author == bot.user:
     return
 
-  # From here, you can add all the rules and the behaviour of the bot.
-  # In this case, the bot checks if the content of the message is "Hello!" and send a message if it's true.
+
   if message.content in hello_list:
     await message.channel.send("Hello! I'm happy to see you around here.")
     return
