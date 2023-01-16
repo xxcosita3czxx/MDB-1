@@ -1,0 +1,11 @@
+[Unit]
+Description=Magic Discord Bot runner        
+
+[Service]
+User=root            
+WorkingDirectory=/opt/mdb/                       
+ExecStart=python3 src/bot.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
